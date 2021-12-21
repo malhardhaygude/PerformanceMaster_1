@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assign the Task</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="ap2.js"></script>
+</head>
+<body onload="load()">
+<div id="myform">
+<b>Add Assignments</b>
+<table>
+    <form action="">
+    <tr>
+        <td>Assignment_Id:</td>
+        <td><input type="text" id="assignment_id"></td>
+    </tr>
+ 
+    <tr>
+        <td>UserID:</td>
+        <td><input type="text" id="userid"></td>
+        
+    </tr>
+    <tr>
+        <td>Title:</td>
+        <td><input type="text" id="title"></td>
+    </tr>
+    <tr>
+        <td>Statement:</td>
+        <td><textarea name="" id="statement" cols="40" rows="5"></textarea></td>
+    </tr>
+    <tr>
+        <td>Assigned Date</td>
+        <td><input type="date" id="assignedDate"></td>
+            
+    </tr>
+    <tr>
+        <td>Due Date</td>
+        <td><input type="date" id="dueDate"></td>
+            
+    </tr>
+    <tr>
+       <td> <br><input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="reset" value="Reset" id="reset" onclick="">
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</form>
+</table>
+</div>
+<div id="mydata">
+<b>Current Assignements ...</b>
+<!-- <table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+       
+        <td><b>Name</b></td>
+        <td><b>Age</b></td>
+        <td>&nbsp;</td>
+    </tr>
+</table> -->
+<table class="table table-bordered"  id="myTableData">
+    <thead class="thead-dark" class="table table-bordered">
+      <tr class="table table-bordered">
+        <th scope="col">Assignment_Id</th>
+        <th scope="col">UserId</th>
+        <th scope="col">Title</th>
+        <th scope="col">Statements</th>
+        <th scope="col">Assigned Date</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">&nbsp;</th>
+        <!-- <th scope="col">Handle</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- <th scope="row">Otto</th>
+        <td>Mark</td>
+        <td></td>
+        <td>@mdo</td> -->
+      </tr>
+      </tbody>
+    </table>
+&nbsp;
+ 
+</div>
+
+</body>
+</html>

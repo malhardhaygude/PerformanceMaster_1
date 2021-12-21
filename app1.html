@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="ap1.js"></script>
+</head>
+<body onload="load()">
+<div id="myform">
+<b>USER DATA</b>
+<table>
+    <form action="">
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>UserID:</td>
+        <td><input type="text" id="userid"></td>
+            
+    </tr>
+    <tr>
+        <td>Mobile Number:</td>
+        <td><input type="number" id="mobileNumber"></td>
+            
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="email" id="email"></td>
+            
+    </tr>
+    <tr>
+       <td> <br><input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="reset" value="Reset" id="reset" onclick="">
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</form>
+</table>
+</div>
+<div id="mydata">
+<b>Current data in the system ...</b>
+<!-- <table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+       
+        <td><b>Name</b></td>
+        <td><b>Age</b></td>
+        <td>&nbsp;</td>
+    </tr>
+</table> -->
+<table class="table table-bordered"  id="myTableData">
+    <thead class="thead-dark" class="table table-bordered">
+      <tr class="table table-bordered">
+        <th scope="col">Name</th>
+        <th scope="col">USERId</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">&nbsp;</th>
+        <!-- <th scope="col">Handle</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- <th scope="row">Otto</th>
+        <td>Mark</td>
+        <td></td>
+        <td>@mdo</td> -->
+      </tr>
+      </tbody>
+    </table>
+&nbsp;
+ 
+</div>
+
+</body>
+</html>
